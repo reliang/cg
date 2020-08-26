@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reshu Catherine Liang</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <!-- gallery -->
+  <!-- https://codepen.io/kathykato/pen/KRQOKY -->
+  <!-- product -->
+  <!-- https://codepen.io/kathykato/pen/gdvjax -->
+  <!-- event delegate -->
+  <!-- https://davidwalsh.name/event-delegate -->
+  <!-- modal -->
+  <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+  <!-- close button -->
+  <!-- https://codepen.io/merrybottle/pen/PdwXYO -->
+  <!-- jQuery load -->
+  <!-- https://api.jquery.com/load/ -->
+  <!-- play button -->
+  <!-- https://codepen.io/martinkrulltott/pen/xwrXwR -->
+  <!-- using span for clicking psuedo elements -->
+  <!-- http://jsfiddle.net/Hx22x/ -->
+
+  <link rel="stylesheet" href="scss/index.css">
+  <!--jQuery
+    ================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="landing">
+    <!-- <img class="landing-bg" src="images/bg-top.png"> -->
+    <nav>
+      <div class="container">
+        <div class="grid">
+          <div class="column-xs-12 column-md-10">
+            <h4 id="site-title">Reshu &nbsp;Catherine &nbsp;Liang</h4>
+          </div>
+          <div class="column-xs-12 column-md-2">
+            <ul>
+              <li><a href="#">Game</a></li>
+              <li><a href="#">Animation</a></li>
+              <li><a href="#">Coding</a></li>
+              <li><a href="images/CG Resume 7_23_2020 - Google Docs.pdf" target="_blank">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="landing-content">
+      <div class="container">
+        <div class="grid">
+          <div class="column-xs-12 column-md-6">
+            <p class="hi">Hi</p>
+          </div>
+          <div class="column-xs-12 column-md-6 landing-intro">
+            <h1>I'm Catherine,</h1>
+            <h3>
+              a rising senior (graduating May 2021) at the University of Pennsylvania, studying Computer Graphics.
+              I draw, develope websites, and create Unity games.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gallery-listener">
+    <section class="gallery">
+      <div class="container">
+        <h2 class="gallery-title right">Game</h2>
+        <div class="grid">
+          <div class="column-xs-12 column-md-6">
+            <figure class="img-container">
+              <img id="monster-express" src="images/monster-express/train-portfolio.jpg" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Monster Express</h2>
+                <h3 class="category">2D Unity Game</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-6">
+            <figure class="img-container">
+              <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">My Crazy Neighbor</h2>
+                <h3 class="category">2D Unity Game</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h2 class="gallery-title">Animation</h2>
+        <div class="grid">
+          <div class="column-xs-12 column-md-4">
+            <figure class="img-container">
+              <img id="character-project" src="images/character.jpeg" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Character Project</h2>
+                <h3 class="category">3D Model</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-4">
+            <figure class="img-container">
+              <img id="happiness" src="images/happiness.png" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Pursuit of Happiness</h2>
+                <h3 class="category">2D Animation</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-4">
+            <figure class="img-container">
+              <img id="bunny" src="images/playboy-bunny/bunny1_h.jpg">
+              <figcaption class="img-content-hover">
+                <h2 class="title">Playboy Bunny</h2>
+                <h3 class="category">3D Model & Rig</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-6">
+            <figure class="img-container">
+              <img id="food" src="images/food-sustainability-project/still1.jpg">
+              <figcaption class="img-content-hover">
+                <h2 class="title">Food Sustainability Project</h2>
+                <h3 class="category">2D Animation</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-6">
+            <figure class="img-container">
+              <img id="hotel" src="images/capsule-hotel/video-screenshot.png" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Capsule Hotel</h2>
+                <h3 class="category">3D Model</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h2 class="gallery-title right">Coding</h2>
+        <div class="grid">
+          <div class="column-xs-12 column-md-4">
+            <figure class="img-container">
+              <img id="torii" src="images/torii-gate/torii_render1.png" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Japanese Torii Gate</h2>
+                <h3 class="category">Real-Time Rendering</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-4">
+            <figure class="img-container">
+              <img id="minecraft" src="images/mini-minecraft/0b37ab52d9e19824d878aa66e7a24f8.png">
+              <figcaption class="img-content-hover">
+                <h2 class="title">Mini Minecraft</h2>
+                <h3 class="category">Game Development</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-md-4">
+            <figure class="img-container">
+              <img id="maya" src="images/mini-maya/video-screenshot.png" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Mini Maya</h2>
+                <h3 class="category">Graphics Software Development</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12">
+            <figure class="img-container">
+              <img id="pbr" src="images/pbr/custom1.png" />
+              <figcaption class="img-content-hover">
+                <h2 class="title">Physically-Based Rendering</h2>
+                <h3 class="category">Graphics Rendering</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="grid">
+        <div class="column-xs-12">
+          <ul class="social">
+            <li><a href="https://twitter.com/kato_katherine" target="_blank" rel="noopener noreferrer"><span
+                  class="fab fa-twitter"></span></a></li>
+            <li><a href="https://codepen.io/kathykato" target="_blank" rel="noopener noreferrer"><span
+                  class="fab fa-codepen"></span></a></li>
+            <li><a href="https://github.com/kathykato" target="_blank" rel="noopener noreferrer"><span
+                  class="fab fa-github"></span></a></li>
+          </ul>
+          <p class="copyright">&copy; Copyright 2020 Catherine Liang</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modals"></div>
+  
+
+  <script src="javascript/gallery.js"></script>
+  <script src="javascript/modal.js"></script>
+</body>
+
+</html>
