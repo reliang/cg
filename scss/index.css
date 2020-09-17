@@ -850,7 +850,7 @@ nav li:last-child {
   top: calc(2 * 2.25rem + 2 * 1.25rem);
   width: 100%;
   /* Full width */
-  height: calc(100% - 2 * 2.25rem + 2 * 1.25rem);
+  height: calc(100% - 2 * 2.25rem - 2 * 1.25rem);
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
@@ -871,6 +871,13 @@ nav li:last-child {
   float: right;
   height: 40px;
   width: 40px;
+  display: none;
+  /* hide non-mobile */
+}
+
+.close.mobile {
+  display: block;
+  margin-bottom: 2rem;
 }
 
 .close button {
@@ -1030,7 +1037,13 @@ nav li:last-child {
 @media (min-width: 62rem) {
   .modal {
     top: calc(2 * 2.25rem + 1.25rem);
-    height: calc(100% - 2 * 2.25rem + 1.25rem);
+    height: calc(100% - 2 * 2.25rem - 1.25rem);
+  }
+  .close {
+    display: block;
+  }
+  .close.mobile {
+    display: none;
   }
   .project-image img, .project-video video, .project-video iframe, .image-list img {
     width: 100%;

@@ -23,8 +23,8 @@ $nav-font-size: 1.25rem;
 $nav-padding: 2.25rem;
 $nav-height: calc(2 * 2.25rem + 1.25rem);
 $nav-height-mobile: calc(2 * 2.25rem + 2 * 1.25rem);
-$modal-height: calc(100% - 2 * 2.25rem + 1.25rem);
-$modal-height-mobile: calc(100% - 2 * 2.25rem + 2 * 1.25rem);
+$modal-height: calc(100% - 2 * 2.25rem - 1.25rem);
+$modal-height-mobile: calc(100% - 2 * 2.25rem - 2 * 1.25rem);
 
 $barlow-bold: 700 1.5em 'Barlow', sans-serif;
 $roboto-bold: 700 1.5em 'Roboto', sans-serif;
@@ -264,6 +264,11 @@ nav {
   // font-weight: bold;
   height: 40px;
   width: 40px;
+  display: none; /* hide non-mobile */
+  &.mobile {
+    display: block;
+    margin-bottom: 2rem;
+  }
 }
 
 // .close:hover,
@@ -416,6 +421,13 @@ nav {
   .modal {
     top: $nav-height;
     height: $modal-height;
+  }
+
+  .close {
+    display: block;
+    &.mobile {
+      display: none;
+    }
   }
 
   .project-image img, .project-video video, .project-video iframe, .image-list img {
