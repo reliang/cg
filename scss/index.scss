@@ -29,6 +29,10 @@ $modal-height-mobile: calc(100% - 2 * 2.25rem - 2 * 1.25rem);
 $barlow-bold: 700 1.5em 'Barlow', sans-serif;
 $roboto-bold: 700 1.5em 'Roboto', sans-serif;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   &::before, &::after {
@@ -218,6 +222,20 @@ nav {
   font-weight: 400;
   margin-top: 1.25rem;
   margin-left: -2rem;
+}
+
+a.top-anchor {
+  display: block;
+  position: relative;
+  top: -5rem; // same as .landing-content's margin-top
+  visibility: hidden;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -3rem; // same as .landing-content's margin-top
+  visibility: hidden;
 }
 
 .title {

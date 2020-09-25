@@ -627,6 +627,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -822,6 +826,20 @@ nav li:last-child {
   font-weight: 400;
   margin-top: 1.25rem;
   margin-left: -2rem;
+}
+
+a.top-anchor {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -3rem;
+  visibility: hidden;
 }
 
 .title {
